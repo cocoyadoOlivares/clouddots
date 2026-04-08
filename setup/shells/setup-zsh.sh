@@ -194,6 +194,8 @@ append_entries=(
   '(( $+commands[nvim] )) && alias vi=nvim'
   '(( $+commands[nvim] )) && alias vim=nvim'
   'alias l="ls -lah"'
+  'alias lint="$HOME/.local/bin/lint"'
+  'alias auth="$HOME/.local/bin/auth"'
   '[[ $- == *i* && -t 0 ]] && stty -ixon'
   '[[ -f "$HOME/notification-sender.sh" ]] && source "$HOME/notification-sender.sh"'
 )

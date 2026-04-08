@@ -58,6 +58,15 @@ bash $BASH_FLAGS "$script_dir/setup/shells/setup-bash.sh"
 bash $BASH_FLAGS "$script_dir/setup/shells/setup-zsh.sh"
 bash $BASH_FLAGS "$script_dir/setup/shells/setup-fish.sh"
 
+# Install linter.sh to ~/.local/bin/lint
+mkdir -p "$HOME/.local/bin"
+cp "$script_dir/linter.sh" "$HOME/.local/bin/lint"
+chmod +x "$HOME/.local/bin/lint"
+
+# Install auth.sh to ~/.local/bin/auth
+cp "$script_dir/auth.sh" "$HOME/.local/bin/auth"
+chmod +x "$HOME/.local/bin/auth"
+
 bash $BASH_FLAGS "$script_dir/setup/setup-editors.sh"
 bash $BASH_FLAGS "$script_dir/setup/setup-terminal.sh"
 bash $BASH_FLAGS "$script_dir/setup/setup-ai.sh"

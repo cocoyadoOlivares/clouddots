@@ -27,7 +27,7 @@ git config --global fetch.pruneTags true
 git config --global grep.column true
 git config --global grep.lineNumber true
 git config --global merge.conflictstyle zdiff3
-git config --global pull.rebase true
+git config --global pull.rebase false
 git config --global push.autoSetupRemote true
 git config --global rebase.updateRefs true
 git config --global rerere.autoupdate true

@@ -35,6 +35,8 @@ append_entries=(
   'command -v fnm &>/dev/null && eval "$(fnm env --use-on-cd --shell bash)"'
   'az() { AZURE_DEVOPS_EXT_PAT=$(ado-auth-helper get-access-token) command az "$@"; }'
   '[ -f "$HOME/notification-sender.sh" ] && source "$HOME/notification-sender.sh"'
+  'alias lint="$HOME/.local/bin/lint"'
+  'alias auth="$HOME/.local/bin/auth"'
 )
 
 for entry in "${append_entries[@]}"; do
