@@ -67,6 +67,10 @@ chmod +x "$HOME/.local/bin/lint"
 cp "$script_dir/auth.sh" "$HOME/.local/bin/auth"
 chmod +x "$HOME/.local/bin/auth"
 
+# Install bohemia.sh to ~/.local/bin/bohemia
+cp "$script_dir/bohemia.sh" "$HOME/.local/bin/bohemia"
+chmod +x "$HOME/.local/bin/bohemia"
+
 bash $BASH_FLAGS "$script_dir/setup/setup-editors.sh"
 bash $BASH_FLAGS "$script_dir/setup/setup-terminal.sh"
 bash $BASH_FLAGS "$script_dir/setup/setup-ai.sh"

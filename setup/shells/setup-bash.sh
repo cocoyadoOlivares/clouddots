@@ -37,6 +37,7 @@ append_entries=(
   '[ -f "$HOME/notification-sender.sh" ] && source "$HOME/notification-sender.sh"'
   'alias lint="$HOME/.local/bin/lint"'
   'alias auth="$HOME/.local/bin/auth"'
+  'alias bohemiahome="$HOME/.local/bin/bohemia home"'
 )
 
 for entry in "${append_entries[@]}"; do

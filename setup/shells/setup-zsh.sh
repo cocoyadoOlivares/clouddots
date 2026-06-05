@@ -196,6 +196,7 @@ append_entries=(
   'alias l="ls -lah"'
   'alias lint="$HOME/.local/bin/lint"'
   'alias auth="$HOME/.local/bin/auth"'
+  'alias bohemiahome="$HOME/.local/bin/bohemia home"'
   '[[ $- == *i* && -t 0 ]] && stty -ixon'
   '[[ -f "$HOME/notification-sender.sh" ]] && source "$HOME/notification-sender.sh"'
 )
